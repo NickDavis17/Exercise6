@@ -66,10 +66,11 @@ static Scanner input = new Scanner(System.in);
         boolean isString = false;
         while (!isString) {
             try {
-                int a = Integer.parseInt(userInput);
+
                 double b = Double.parseDouble(userInput);
                 System.out.println(userInput + " is not a valid string. " + message);
                 userInput = input.nextLine();
+
             }
             catch (Exception e){
                 isString = true;
